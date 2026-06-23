@@ -27,6 +27,7 @@
 7. [07-warehouse-comparison-rfq.md](07-warehouse-comparison-rfq.md) — сравнение складов Гамбург/Фредерисия/Роттердам в цифрах + готовый шаблон RFQ для 3PL.
 8. [08-certification-checklist.md](08-certification-checklist.md) — чек-лист сертификации под пилотный рынок (Ближний Восток / GCC, фокус ОАЭ).
 9. [09-zug-canton-fiduciary.md](09-zug-canton-fiduciary.md) — кантон Цуг (почему он, налоги 2026, patent box/IP) + список fiduciary-партнёров и шаблон запроса КП.
+10. [10-fiduciary-partners-legal-blindspots.md](10-fiduciary-partners-legal-blindspots.md) — развёрнутые профили fiduciary-партнёров + слепые зоны и законы взаимодействия 2026 (новый AML, реестр бенефициаров LETA, substance, Pillar Two).
 
 ## Статус
 
