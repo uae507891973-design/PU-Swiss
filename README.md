@@ -26,6 +26,7 @@
 6. [06-financial-model.md](06-financial-model.md) — юнит-экономика комплекта, точка безубыточности, расчёт оборотного капитала и кассового риска.
 7. [07-warehouse-comparison-rfq.md](07-warehouse-comparison-rfq.md) — сравнение складов Гамбург/Фредерисия/Роттердам в цифрах + готовый шаблон RFQ для 3PL.
 8. [08-certification-checklist.md](08-certification-checklist.md) — чек-лист сертификации под пилотный рынок (Ближний Восток / GCC, фокус ОАЭ).
+9. [09-zug-canton-fiduciary.md](09-zug-canton-fiduciary.md) — кантон Цуг (почему он, налоги 2026, patent box/IP) + список fiduciary-партнёров и шаблон запроса КП.
 
 ## Статус
 
