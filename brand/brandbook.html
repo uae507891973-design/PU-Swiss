@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Strateon Trading FZCO — Брендбук v2.0</title>
+<style>
+  @font-face{font-family:Inter;src:url('fonts/Inter-Regular.woff2') format('woff2');font-weight:400}
+  @font-face{font-family:Inter;src:url('fonts/Inter-Medium.woff2') format('woff2');font-weight:500}
+  @font-face{font-family:Inter;src:url('fonts/Inter-SemiBold.woff2') format('woff2');font-weight:600}
+  @font-face{font-family:Inter;src:url('fonts/Inter-Bold.woff2') format('woff2');font-weight:700}
+  @font-face{font-family:'Inter Display';src:url('fonts/InterDisplay-Bold.woff2') format('woff2');font-weight:700}
+  :root{
+    --navy:#061D2E; --deep:#0A2338; --gold:#D2A24E; --gold2:#B98632;
+    --ivory:#F7F3EA; --gray:#6B7885;
+  }
+  *{margin:0;box-sizing:border-box}
+  @page{size:1600px 900px;margin:0}
+  html,body{font-family:Inter,sans-serif}
+  .page{width:1600px;height:900px;page-break-after:always;position:relative;overflow:hidden;
+        padding:80px 96px 70px;display:flex;flex-direction:column}
+  .page.dark{background:var(--navy);color:var(--ivory)}
+  .page.light{background:var(--ivory);color:var(--navy)}
+  .foot{position:absolute;left:96px;right:96px;bottom:34px;display:flex;justify-content:space-between;
+        font-size:14px;letter-spacing:.12em;color:var(--gray)}
+  .foot .pn::after{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;
+        background:var(--gold);margin-left:10px;vertical-align:middle}
+  .tick{width:64px;height:5px;background:var(--gold);margin-bottom:26px}
+  h1.sec{font-family:'Inter Display',Inter,sans-serif;font-size:52px;font-weight:700;margin-bottom:18px}
+  p.lead{font-size:21px;line-height:1.55;max-width:1050px;color:inherit;opacity:.88}
+  .dark p.lead{color:#c8d0d8;opacity:1}
+  .cards{display:flex;gap:28px}
+  .card{background:var(--deep);border-radius:14px;padding:34px 36px;flex:1;border:1px solid rgba(210,162,78,.14)}
+  .light .card{background:#fff;border:1px solid rgba(6,29,46,.08);box-shadow:0 2px 10px rgba(6,29,46,.05)}
+  .card h3{color:var(--gold);font-size:20px;letter-spacing:.06em;margin-bottom:14px;font-weight:600}
+  .card p{font-size:17.5px;line-height:1.5;color:#c8d0d8}
+  .light .card p{color:#43525e}
+  .klabel{font-size:16px;font-weight:700;letter-spacing:.1em;color:var(--gold);margin-bottom:8px}
+  .ksub{font-size:15px;color:#9aa6b0;line-height:1.45}
+  ul.gold{list-style:none;font-size:19px;line-height:1.5}
+  ul.gold li{margin-bottom:16px;padding-left:30px;position:relative;color:#c8d0d8}
+  ul.gold li::before{content:'';position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
+  .light ul.gold li{color:#43525e}
+  .net{position:absolute;opacity:.5;pointer-events:none}
+  /* cover */
+  .coverwrap{margin:auto 0;position:relative;z-index:2}
+  .goldwedge{position:absolute;right:0;top:0;bottom:0;width:420px;z-index:1;
+    background:linear-gradient(200deg,var(--gold) 0%,var(--gold2) 90%);
+    clip-path:polygon(62% 0,100% 0,100% 100%,20% 100%,44% 58%)}
+  .goldwedge2{position:absolute;right:150px;top:0;bottom:0;width:200px;z-index:0;opacity:.35;
+    background:var(--gold2);clip-path:polygon(70% 0,100% 0,30% 100%,0 100%)}
+  .v-tag{display:inline-block;color:var(--gold);font-weight:600;font-size:19px;letter-spacing:.04em;
+    border-bottom:2px solid var(--gold);padding-bottom:12px;margin-top:34px}
+  .cover-slogan{margin-top:26px;font-size:19px;color:#9aa6b0;letter-spacing:.02em}
+  /* logo blocks */
+  .lblock{border-radius:14px;padding:44px 52px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;flex:1}
+  .lblock .cap{font-size:15.5px;font-weight:600;margin-top:28px;letter-spacing:.04em}
+  .safe{border:2px dashed rgba(185,134,50,.75);border-radius:6px;padding:38px 50px;display:inline-block;background:transparent}
+  .spec{display:flex;gap:0;border-top:1px solid rgba(210,162,78,.25);margin-top:8px}
+  .spec div{flex:1;padding:20px 26px 0;border-left:1px solid rgba(210,162,78,.25)}
+  .spec div:first-child{border-left:none;padding-left:0}
+  .spec b{display:block;font-size:26px;color:var(--gold);font-weight:700;margin-bottom:6px}
+  .spec span{font-size:15px;color:#9aa6b0;line-height:1.4}
+  /* palette */
+  .pal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .chip{border-radius:14px;overflow:hidden;border:1px solid rgba(210,162,78,.18)}
+  .chip .c{height:84px}
+  .chip .t{background:var(--deep);padding:13px 18px}
+  .chip .t b{display:block;font-size:19px;color:var(--ivory);margin-bottom:6px}
+  .chip .t span{font-size:14.5px;color:#9aa6b0;display:block;line-height:1.5}
+  /* icons */
+  .irow{display:flex;gap:26px}
+  .icell{background:var(--deep);border:1px solid rgba(210,162,78,.14);border-radius:14px;flex:1;
+    display:flex;flex-direction:column;align-items:center;padding:38px 10px 30px;gap:20px}
+  .icell img{width:86px;height:86px}
+  .icell b{font-size:16px;letter-spacing:.08em;color:var(--ivory)}
+  .icell span{font-size:14px;color:#9aa6b0}
+  /* do/don't */
+  .dd{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+  .dd .item{background:#fff;border-radius:12px;padding:15px 22px;display:flex;align-items:center;gap:18px;
+    border:1px solid rgba(6,29,46,.08);font-size:16.5px;color:#2c3a46;line-height:1.4}
+  .dot-ok{min-width:26px;height:26px;border-radius:50%;background:var(--gold)}
+  .dot-no{min-width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-size:14px;font-weight:700}
+  h2.sub{font-size:26px;font-weight:700;margin:26px 0 14px}
+  table.info{border-collapse:collapse;width:100%;font-size:17px}
+  table.info td{padding:13px 18px;border-bottom:1px solid rgba(210,162,78,.18);color:#c8d0d8;line-height:1.45}
+  table.info td:first-child{color:var(--gold);font-weight:600;white-space:nowrap;width:320px}
+  .light table.info td{color:#43525e;border-color:rgba(6,29,46,.12)}
+  .panelnote{background:var(--deep);border-radius:14px;padding:28px 34px;border:1px solid rgba(210,162,78,.14)}
+  .panelnote h3{color:var(--gold);font-size:19px;margin-bottom:10px}
+  .panelnote p{font-size:17px;line-height:1.55;color:#c8d0d8}
+  .light .panelnote{background:var(--navy)}
+</style>
+</head>
+<body>
+
+<!-- ============ 1. COVER ============ -->
+<section class="page dark">
+  <div class="goldwedge2"></div><div class="goldwedge"></div>
+  <svg class="net" style="left:70px;top:40px" width="420" height="260" viewBox="0 0 420 260" fill="none" stroke="#D2A24E" stroke-width="1" opacity=".22">
+    <path d="M20 200 L90 60 L180 120 L260 30 L350 90 L400 40"/><path d="M90 60 L180 20 M180 120 L260 180 L350 90"/>
+    <g fill="#D2A24E" stroke="none"><circle cx="20" cy="200" r="4"/><circle cx="90" cy="60" r="4"/><circle cx="180" cy="120" r="4"/><circle cx="260" cy="30" r="4"/><circle cx="350" cy="90" r="4"/><circle cx="180" cy="20" r="3"/><circle cx="260" cy="180" r="3"/></g>
+  </svg>
+  <div class="coverwrap">
+    <img src="logo/strateon-logo-horizontal-dark.svg" style="height:210px" alt="Strateon Trading FZCO">
+    <h1 style="font-family:'Inter Display',Inter,sans-serif;font-size:88px;font-weight:700;margin-top:64px">Брендбук</h1>
+    <p style="font-size:25px;color:#c8d0d8;margin-top:16px">Визуальная система для торговой и посреднической компании</p>
+    <div class="v-tag">Версия 2.0 — август 2026 · векторная система</div>
+    <div class="cover-slogan">Trading. Delivering. Empowering.</div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">01</span></div>
+</section>
+
+<!-- ============ 2. ПЛАТФОРМА ============ -->
+<section class="page dark">
+  <div class="tick"></div>
+  <h1 class="sec">01. Платформа бренда</h1>
+  <p class="lead">Strateon Trading FZCO должна восприниматься как премиальный, точный и надёжный партнёр в международной торговле сырьём.</p>
+  <div style="display:flex;gap:40px;margin-top:44px">
+    <div class="card" style="flex:1.1">
+      <h3>Ключевая идея</h3>
+      <p style="font-size:21px;line-height:1.55">Стратегическая торговля и посредничество: компания соединяет поставщиков, покупателей и логистические цепочки в ключевых товарных секторах.</p>
+    </div>
+    <div style="flex:1.3">
+      <h3 style="color:var(--gold);font-size:22px;margin-bottom:20px;font-weight:600">Обещание бренда</h3>
+      <ul class="gold">
+        <li>Понятные торговые решения для сложных международных поставок.</li>
+        <li>Подбор, сопровождение, брокераж и поддержка доставки.</li>
+        <li>Фокус на химсырье, металлах, удобрениях, нефтепродуктах, газе и твёрдых топливах.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cards" style="margin-top:auto">
+    <div class="card"><div class="klabel">НАДЁЖНОСТЬ</div><div class="ksub">строгая структура, тёмный фон, дозированное золото</div></div>
+    <div class="card"><div class="klabel">МАСШТАБ</div><div class="ksub">карта мира, международный контекст</div></div>
+    <div class="card"><div class="klabel">ТОЧНОСТЬ</div><div class="ksub">геометрия 3:4, сетка, чистая типографика</div></div>
+    <div class="card"><div class="klabel">ЭКСПЕРТИЗА</div><div class="ksub">сырьевые категории и отраслевые иконки</div></div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">02</span></div>
+</section>
+
+<!-- ============ 3. ЛОГОТИП ============ -->
+<section class="page light">
+  <div class="tick"></div>
+  <h1 class="sec">02. Логотип</h1>
+  <p class="lead">Основной знак — монограмма S в вытянутом шестиграннике: структура, защищённость сделки и движение потоков. Логотип не связан с монетами и не должен считываться как крипто-тематика. Знак существует только в векторе.</p>
+  <div style="display:flex;gap:32px;margin-top:36px;height:300px">
+    <div class="lblock" style="background:var(--navy)">
+      <img src="logo/strateon-logo-horizontal-dark.svg" style="height:118px">
+      <div class="cap" style="color:var(--gold)">Основная версия: золото + белый на тёмно-синем фоне</div>
+    </div>
+    <div class="lblock" style="background:#fff;border:1px solid rgba(6,29,46,.1)">
+      <img src="logo/strateon-logo-horizontal-light.svg" style="height:118px">
+      <div class="cap" style="color:var(--navy)">Светлая версия: знак золото, текст тёмно-синий</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:60px;margin-top:36px;align-items:center">
+    <div style="flex:1.2">
+      <h2 class="sub" style="margin-top:0">Охранное поле</h2>
+      <p style="font-size:18px;line-height:1.6;color:#43525e">Минимальное свободное пространство вокруг логотипа равно высоте внутреннего просвета в монограмме S. В макетах не размещать текст, иконки или фотографии ближе этого поля. Логотип не ставить на шумные фоны и фотографии без затемняющей подложки.</p>
+    </div>
+    <div style="flex:1;text-align:center">
+      <div class="safe"><img src="logo/strateon-logo-horizontal-light.svg" style="height:80px"></div>
+      <p style="font-size:15px;color:#8a8378;margin-top:14px">Минимальная ширина в печати: 32 мм. В digital: 220 px (компактная версия — от 140 px).</p>
+    </div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">03</span></div>
+</section>
+
+<!-- ============ 4. ПОСТРОЕНИЕ И ИСПОЛНЕНИЯ ============ -->
+<section class="page dark">
+  <div class="tick"></div>
+  <h1 class="sec">02. Логотип — построение и исполнения</h1>
+  <div style="display:flex;gap:70px;margin-top:30px;align-items:center">
+    <img src="logo/strateon-mark-gold.svg" style="height:266px">
+    <div style="flex:1">
+      <div class="spec">
+        <div><b>3 : 4</b><span>пропорции силуэта (150×200 ед.)</span></div>
+        <div><b>2 : 3</b><span>уклон всех граней и спины S (33.69°)</span></div>
+        <div><b>22.5 ед.</b><span>единая толщина штриха — 11.25% высоты</span></div>
+        <div><b>180°</b><span>точная поворотная симметрия двух деталей</span></div>
+      </div>
+      <p style="font-size:17px;line-height:1.6;color:#9aa6b0;margin-top:26px">Знак построен параметрически: контрформа 24 ед., разрывы контура 14 ед., все срезы параллельны спине, концы спины срезаны вертикально. Пропорции и углы не изменять; знак не перерисовывать вручную.</p>
+    </div>
+  </div>
+  <div style="display:flex;gap:26px;margin-top:40px">
+    <div class="card" style="text-align:center"><img src="logo/strateon-mark-gold.svg" style="height:94px"><h3 style="margin-top:14px">Плоское золото</h3><p>Основная версия: печать, фольга, шелкография, гравировка</p></div>
+    <div class="card" style="text-align:center"><img src="logo/strateon-mark-gold-gradient.svg" style="height:94px"><h3 style="margin-top:14px">Градиент палитры</h3><p>Только digital: сайт, презентации, соцсети</p></div>
+    <div class="card" style="text-align:center"><img src="logo/strateon-mark-white.svg" style="height:94px"><h3 style="margin-top:14px">Монохром белый</h3><p>Тёмные фоны, фото, ч/б носители</p></div>
+    <div class="card" style="text-align:center;background:var(--ivory)"><img src="logo/strateon-mark-navy.svg" style="height:94px"><h3 style="margin-top:14px">Монохром navy</h3><p style="color:#43525e">Светлые фоны, документы, факс-случаи</p></div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">04</span></div>
+</section>
+
+<!-- ============ 5. ПАЛИТРА ============ -->
+<section class="page dark">
+  <div class="tick"></div>
+  <h1 class="sec">03. Фирменная палитра</h1>
+  <p class="lead">Палитра сохраняет премиальность: глубокий нефтяной синий как база, тёплое золото как акцент, светлая слоновая кость для деловых материалов. Золото — культурный код статуса и процветания на рынках GCC и Азии.</p>
+  <div class="pal" style="margin-top:28px">
+    <div class="chip"><div class="c" style="background:#061D2E"></div><div class="t"><b>Strateon Navy</b><span>#061D2E · RGB 6/29/46 · CMYK 87/37/0/82<br>Основной фон, визитки, сайт</span></div></div>
+    <div class="chip"><div class="c" style="background:#0A2338"></div><div class="t"><b>Deep Navy</b><span>#0A2338 · RGB 10/35/56 · CMYK 82/38/0/78<br>Градиенты и тёмные панели</span></div></div>
+    <div class="chip"><div class="c" style="background:#D2A24E"></div><div class="t"><b>Strategic Gold</b><span>#D2A24E · RGB 210/162/78 · CMYK 0/23/63/18<br>Логотип, линии, CTA, иконки</span></div></div>
+    <div class="chip"><div class="c" style="background:#B98632"></div><div class="t"><b>Antique Gold</b><span>#B98632 · RGB 185/134/50 · CMYK 0/28/73/27<br>Тиснение, фольга, градиенты</span></div></div>
+    <div class="chip"><div class="c" style="background:#F7F3EA"></div><div class="t"><b>Warm Ivory</b><span>#F7F3EA · RGB 247/243/234 · CMYK 0/2/5/3<br>Фоны документов и буклетов</span></div></div>
+    <div class="chip"><div class="c" style="background:#6B7885"></div><div class="t"><b>Steel Gray</b><span>#6B7885 · RGB 107/120/133 · CMYK 20/10/0/48<br>Служебный текст, таблицы, схемы</span></div></div>
+  </div>
+  <div class="panelnote" style="margin-top:22px">
+    <h3>Рекомендуемое соотношение</h3>
+    <p>70% тёмно-синяя база, 20% светлые деловые поля, 10% золото. Золото использовать дозированно: логотип, разделители, иконки, кнопки и важные акценты. Золото не должно занимать больше 10–12% площади макета.</p>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">05</span></div>
+</section>
+
+<!-- ============ 6. ТИПОГРАФИКА ============ -->
+<section class="page light">
+  <div class="tick"></div>
+  <h1 class="sec">04. Типографика</h1>
+  <p class="lead">Основной характер — крупные разреженные заголовки, чёткая иерархия и спокойный деловой текст. Единственный шрифт системы — Inter (бесплатный, open-source, кириллица + латиница).</p>
+  <div style="display:flex;gap:32px;margin-top:40px;height:300px">
+    <div class="lblock" style="background:var(--navy);color:#fff">
+      <div style="font-family:'Inter Display',Inter,sans-serif;font-size:64px;font-weight:700;letter-spacing:.02em">STRATEON</div>
+      <div style="font-size:26px;color:var(--gold);letter-spacing:.32em;margin-top:18px">GLOBAL COMMODITY SOLUTIONS</div>
+      <p style="font-size:16.5px;color:#9aa6b0;margin-top:26px;line-height:1.55">Заголовки: Inter Display Bold / Inter Bold, верхний регистр, увеличенный трекинг. Использовать для титулов, разделов и ключевых фраз.</p>
+    </div>
+    <div class="lblock" style="background:#fff;border:1px solid rgba(6,29,46,.1)">
+      <div style="font-size:40px;font-weight:700">Заголовок раздела</div>
+      <p style="font-size:19px;margin-top:16px;color:#43525e">Основной текст — Inter Regular / Medium.</p>
+      <p style="font-size:16.5px;margin-top:12px;color:#43525e;line-height:1.55">Для длинных коммерческих материалов сохранять короткие абзацы, достаточные поля и строгие списки. Набор должен выглядеть точно и не перегружать макет.</p>
+    </div>
+  </div>
+  <h2 class="sub">Правила набора</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 60px">
+    <ul class="gold"><li>Не использовать декоративные шрифты и курсив для ключевых сообщений.</li><li>Акцентные слова и CTA можно выделять золотым цветом.</li></ul>
+    <ul class="gold"><li>В заголовках допустим большой трекинг: 0.08–0.18 em.</li><li>Текст на тёмном фоне — белый или светло-серый; мелкий служебный — Steel Gray.</li></ul>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">06</span></div>
+</section>
+
+<!-- ============ 7. ИКОНКИ ============ -->
+<section class="page dark">
+  <div class="tick"></div>
+  <h1 class="sec">05. Категории и иконки</h1>
+  <p class="lead">Иконки быстро объясняют, чем занимается компания. Стиль — тонкая линейная графика в золоте (сетка 48×48, штрих 2.1), без монет, эмблем денег и лишней детализации. Твёрдое топливо собрано из шестигранников — эхо монограммы.</p>
+  <div class="irow" style="margin-top:44px">
+    <div class="icell"><img src="icons/icon-oil-products.svg"><b>OIL PRODUCTS</b><span>нефтепродукты</span></div>
+    <div class="icell"><img src="icons/icon-fertilizers.svg"><b>FERTILIZERS</b><span>удобрения</span></div>
+    <div class="icell"><img src="icons/icon-metals.svg"><b>METALS</b><span>металлы</span></div>
+    <div class="icell"><img src="icons/icon-gas.svg"><b>GAS</b><span>газ</span></div>
+    <div class="icell"><img src="icons/icon-chemicals.svg"><b>CHEMICALS</b><span>химсырьё</span></div>
+    <div class="icell"><img src="icons/icon-solid-fuels.svg"><b>SOLID FUELS</b><span>твёрдое топливо</span></div>
+  </div>
+  <div class="panelnote" style="margin-top:auto">
+    <h3>Использование</h3>
+    <p>На визитке и в digital-баннерах иконки показываются в один ряд с вертикальными золотыми разделителями. В буклетах их можно раскрывать в карточки с коротким описанием услуги: sourcing, brokerage, delivery support. Толщину штриха и сетку не менять; не заливать иконки сплошным цветом.</p>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">07</span></div>
+</section>
+
+<!-- ============ 8. ГРАФЯЗЫК ============ -->
+<section class="page light">
+  <div class="tick"></div>
+  <h1 class="sec">06. Графический язык</h1>
+  <p class="lead">Система строится на четырёх постоянных элементах: тёмный фон, золотая диагональ, глобальная карта и сетевые линии.</p>
+  <div class="cards" style="margin-top:40px">
+    <div class="card"><div style="height:130px;border-radius:10px;background:var(--navy)"></div><h3 style="margin-top:18px;color:var(--navy)">Тёмный фон</h3><p>глубина, надёжность, премиальность</p></div>
+    <div class="card"><div style="height:130px;border-radius:10px;background:linear-gradient(200deg,#D2A24E,#B98632)"></div><h3 style="margin-top:18px;color:var(--navy)">Золотая диагональ</h3><p>акцент и ощущение движения (уклон 2:3 — как в знаке)</p></div>
+    <div class="card"><div style="height:130px;border-radius:10px;background:var(--navy);position:relative;overflow:hidden">
+      <svg width="100%" height="100%" viewBox="0 0 300 130"><g fill="#D2A24E" opacity=".8"><circle cx="40" cy="95" r="2.2"/><circle cx="60" cy="88" r="2.2"/><circle cx="80" cy="80" r="2.2"/><circle cx="100" cy="72" r="2.2"/><circle cx="121" cy="64" r="2.2"/><circle cx="142" cy="57" r="2.2"/><circle cx="163" cy="50" r="2.2"/><circle cx="184" cy="44" r="2.2"/><circle cx="205" cy="38" r="2.2"/><circle cx="226" cy="33" r="2.2"/><circle cx="247" cy="28" r="2.2"/><circle cx="70" cy="105" r="1.4"/><circle cx="110" cy="92" r="1.4"/><circle cx="150" cy="79" r="1.4"/><circle cx="190" cy="67" r="1.4"/><circle cx="230" cy="56" r="1.4"/></g></svg>
+    </div><h3 style="margin-top:18px;color:var(--navy)">Dotted world map</h3><p>международная торговля и глобальный охват</p></div>
+    <div class="card"><div style="height:130px;border-radius:10px;background:var(--deep);position:relative;overflow:hidden">
+      <svg width="100%" height="100%" viewBox="0 0 300 130" fill="none" stroke="#D2A24E" stroke-width="1" opacity=".75"><path d="M30 100 L85 40 L150 75 L210 25 L265 60"/><path d="M85 40 L150 20 M150 75 L210 105 L265 60"/><g fill="#D2A24E" stroke="none"><circle cx="30" cy="100" r="3.5"/><circle cx="85" cy="40" r="3.5"/><circle cx="150" cy="75" r="3.5"/><circle cx="210" cy="25" r="3.5"/><circle cx="265" cy="60" r="3.5"/><circle cx="150" cy="20" r="2.5"/><circle cx="210" cy="105" r="2.5"/></g></svg>
+    </div><h3 style="margin-top:18px;color:var(--navy)">Network lines</h3><p>связи, посредничество и логистика</p></div>
+  </div>
+  <h2 class="sub">Композиционный принцип</h2>
+  <p style="font-size:18.5px;line-height:1.6;color:#43525e;max-width:1300px">Верхний уровень коммуникации — спокойный и крупный: логотип, короткое обещание, затем категории. Внутренние страницы — больше белого пространства, карточки и таблицы. Декоративные элементы не пересекают логотип и его охранное поле.</p>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">08</span></div>
+</section>
+
+<!-- ============ 9. DIGITAL ============ -->
+<section class="page dark">
+  <div class="tick"></div>
+  <h1 class="sec">07. Digital и сайт</h1>
+  <p class="lead">Сайт продолжает стиль системы: тёмный hero-блок, крупный логотип, короткий оффер и ясные товарные категории.</p>
+  <div style="display:flex;gap:40px;margin-top:40px">
+    <div style="flex:1.35">
+      <table class="info">
+        <tr><td>Фирменный блок</td><td>полная версия — от 220 px ширины; 140–220 px — компактная версия без подстрочника TRADING FZCO; меньше 140 px — только знак</td></tr>
+        <tr><td>Фавиконка</td><td>strateon-favicon.svg (чистый знак); на тёмно-синих поверхностях сайта — тоже чистый знак, плашка сливается с фоном</td></tr>
+        <tr><td>Иконка приложения</td><td>strateon-appicon (знак на navy-плашке, скругление 18.75%); PNG 16–512 px готовы</td></tr>
+        <tr><td>Кнопки и активные элементы</td><td>Strategic Gold; текст на кнопках — Strateon Navy; при наведении — Antique Gold</td></tr>
+        <tr><td>Версия знака</td><td>в digital допустима градиентная (D2A24E → B98632); фотографии — порт, логистика, нефтехимия, металлургия, склады</td></tr>
+      </table>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:24px">
+      <div style="background:var(--deep);border-radius:14px;padding:30px;display:flex;align-items:center;gap:34px;border:1px solid rgba(210,162,78,.14)">
+        <img src="logo/strateon-appicon.svg" style="width:104px;height:104px">
+        <img src="logo/strateon-appicon.svg" style="width:56px;height:56px">
+        <img src="logo/strateon-appicon.svg" style="width:28px;height:28px">
+        <span style="font-size:14.5px;color:#9aa6b0">app-иконка<br>512 / 64 / 32 px</span>
+      </div>
+      <div style="background:#F7F3EA;border-radius:14px;padding:30px;display:flex;align-items:center;gap:34px">
+        <img src="logo/strateon-logo-horizontal-compact-dark.svg" style="height:44px;background:var(--navy);border-radius:8px;padding:8px 18px">
+        <span style="font-size:14.5px;color:#8a8378">компактная версия<br>для узких шапок</span>
+      </div>
+      <div class="panelnote"><h3>Чего избегать в digital</h3><p>Клише с деньгами, монетами и биржевыми графиками; свечение и 3D-эффекты; логотип поверх шумных фото без подложки.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">09</span></div>
+</section>
+
+<!-- ============ 10. ПЕЧАТЬ ============ -->
+<section class="page dark">
+  <div class="tick"></div>
+  <h1 class="sec">08. Печать, фольга, визитка</h1>
+  <div style="display:flex;gap:40px;margin-top:34px">
+    <div style="flex:1.3">
+      <table class="info">
+        <tr><td>Цвета в печати</td><td>золото CMYK 0/23/63/18 · navy CMYK 87/37/0/82 · ivory CMYK 0/2/5/3; Pantone-эталон зафиксировать по первой физической пробе (ориентир — тёплые золотисто-охристые 4515C–465C)</td></tr>
+        <tr><td>Версия знака для печати</td><td>только плоская (strateon-mark-gold / -navy / -white); градиент в печать и фольгу не отдавать</td></tr>
+        <tr><td>Фольга / тиснение</td><td>матовая металлизированная золотая фольга; клише — с векторного PDF; минимальная высота знака под фольгу 8 мм</td></tr>
+        <tr><td>Визитка</td><td>90×50 или 85×55 мм, вылеты 3 мм, плотный матовый картон 350–450 г/м²; выборочная золотая фольга для монограммы, линий и иконок</td></tr>
+        <tr><td>Минимальные размеры</td><td>фирменный блок — от 32 мм ширины; отдельный знак — от 8 мм высоты</td></tr>
+      </table>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:24px">
+      <div style="background:var(--deep);border-radius:14px;padding:34px;text-align:center;border:1px solid rgba(210,162,78,.14)">
+        <img src="logo/strateon-logo-stacked-dark.svg" style="height:250px">
+        <p style="font-size:14.5px;color:#9aa6b0;margin-top:16px">вертикальный блок — обложки, сертификаты, стенды</p>
+      </div>
+      <div class="panelnote"><h3>Файлы для типографии</h3><p>Пакет strateon-brand-print.zip: векторные PDF и SVG, текст в кривых — шрифты не требуются. Макеты не перерисовывать и не масштабировать непропорционально.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">10</span></div>
+</section>
+
+<!-- ============ 11. ПРАВИЛА ============ -->
+<section class="page light">
+  <div class="tick"></div>
+  <h1 class="sec">09. Правила применения</h1>
+  <p class="lead">Базовые ограничения, чтобы бренд оставался премиальным и однозначным.</p>
+  <h2 class="sub" style="margin-top:16px">Можно</h2>
+  <div class="dd">
+    <div class="item"><span class="dot-ok"></span>Сохранять тёмно-синий фон и золотой акцент; использовать карту мира, сети и диагональные элементы.</div>
+    <div class="item"><span class="dot-ok"></span>Показывать товарные категории через фирменные иконки; писать короткими деловыми фразами.</div>
+    <div class="item"><span class="dot-ok"></span>Использовать градиентную версию знака в digital-носителях.</div>
+    <div class="item"><span class="dot-ok"></span>Ставить компактную версию блока в узких шапках и подписях e-mail.</div>
+  </div>
+  <h2 class="sub">Нельзя</h2>
+  <div class="dd">
+    <div class="item"><span class="dot-no">✕</span>Заменять монограмму монетами, валютными знаками или крипто-символикой.</div>
+    <div class="item"><span class="dot-no">✕</span>Перегружать макет золотом (больше 10–12% площади), добавлять свечение, тени и 3D.</div>
+    <div class="item"><span class="dot-no">✕</span>Использовать ярко-красные, кислотные или случайные цвета вне палитры.</div>
+    <div class="item"><span class="dot-no">✕</span>Сжимать логотип, менять пропорции, поворачивать или размещать на шумном фоне.</div>
+    <div class="item"><span class="dot-no">✕</span>Перерисовывать знак вручную или набирать подстрочник шрифтом — текст в файлах уже в кривых.</div>
+    <div class="item"><span class="dot-no">✕</span>Отдавать градиентную версию в печать, фольгу или гравировку — там только плоская.</div>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">11</span></div>
+</section>
+
+<!-- ============ 12. ФИНАЛ ============ -->
+<section class="page dark">
+  <div class="goldwedge2"></div><div class="goldwedge"></div>
+  <div class="coverwrap" style="max-width:900px">
+    <img src="logo/strateon-logo-horizontal-dark.svg" style="height:170px">
+    <h1 style="font-family:'Inter Display',Inter,sans-serif;font-size:56px;font-weight:700;margin-top:56px">Готовая система</h1>
+    <p style="font-size:20px;line-height:1.6;color:#c8d0d8;margin-top:18px;max-width:760px">Брендбук фиксирует визуальный стиль Strateon Trading FZCO: премиальный тёмно-синий фон, золотая векторная монограмма, глобальная торговая география и ясная структура товарных направлений.</p>
+    <div class="panelnote" style="margin-top:34px;max-width:760px">
+      <h3>Комплект файлов</h3>
+      <p>brand/logo — знак и фирменные блоки (SVG); brand/png — готовые PNG; brand/icons — иконки категорий; brand/dist — пакеты для типографии и digital; brand/tools — параметрический генератор знака.</p>
+    </div>
+    <p style="font-size:15px;color:#9aa6b0;margin-top:30px">office@strateon.pro · www.strateon.pro · Dubai, United Arab Emirates<br>Адрес и реквизиты обновить после выпуска лицензии FZCO.</p>
+  </div>
+  <div class="foot"><span>STRATEON TRADING FZCO BRANDBOOK</span><span class="pn">12</span></div>
+</section>
+
+</body>
+</html>
