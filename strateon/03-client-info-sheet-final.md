@@ -1,12 +1,10 @@
-# Client Information Sheet — чистовая версия v2.1 (для отправки клиентам)
+# Client Information Sheet — чистовая версия v2.2 (для отправки клиентам)
 
-> Финальный английский текст без внутренних примечаний (PDF: `STRATEON_Client_Information_Sheet_v2.pdf`, **4 страницы** включая обложку). Разделы, требующие недостающих данных (Corporate Tax TRN, VAT-статус, аудитор, название банка, география деятельности, опыт основателя, DNFBP/goAML), в эту версию **не включены** — добавляются по мере получения информации, заготовки — в [02-client-info-sheet-revised.md](02-client-info-sheet-revised.md). Антикоррупционный абзац удалён по решению владельца. Сканы паспорта и Emirates ID в файл сознательно не включены: передаются отдельно по запросу (раздел 08).
+> Финальный английский текст без внутренних примечаний (PDF: `STRATEON_Client_Information_Sheet_v2.pdf`, **3 страницы** включая обложку). По решению владельца удалены: антикоррупционный абзац, весь раздел Compliance Statement (включая UBO/санкционную/PEP-декларации и комплаенс-контакт) и абзац-обязательство о неведении нефтяных видов деятельности. Разделы с недостающими данными (TRN, VAT, аудитор, банк, география, опыт) не включены — заготовки в [02-client-info-sheet-revised.md](02-client-info-sheet-revised.md). Сканы паспорта и Emirates ID передаются отдельно по запросу (раздел 07). Таблицы — с полными рамками.
 
-**Cover:** оригинальная фирменная обложка из исходного PDF (тёмно-синяя с золотом, логотип, слоган) — без блока Document Ref./Version.
+**Cover:** оригинальная фирменная обложка из исходного PDF — без блока Document Ref./Version.
 
-**Футер контентных страниц (2–4):** STRATEON TRADING FZCO — CLIENT INFORMATION SHEET | CONFIDENTIAL · FOR DUE DILIGENCE PURPOSES ONLY — PAGE X OF 4 (обложка — страница 1, без номера).
-
-**Для компактности:** прежние разделы 03 (Management) и 04 (Signatory Identification) объединены в один раздел 03 — это же устраняло дублирование данных, отмеченное в разборе; список видов деятельности свёрнут в строку.
+**Футер контентных страниц (2–3):** STRATEON TRADING FZCO — CLIENT INFORMATION SHEET | CONFIDENTIAL · FOR DUE DILIGENCE PURPOSES ONLY — PAGE X OF 3 (обложка — страница 1, без номера).
 
 ---
 
@@ -52,35 +50,19 @@ Note: the occupation stated on the Emirates ID ("Property Owner") reflects the h
 
 Licensed activities: 01 Chemical Fertilizers Trading · 02 Basic Non Ferrous Metal Products Trading · 03 Trading Refined Oil Products Abroad · 04 Tar & Asphalt Trading · 05 Crude Oil Trading Abroad · 06 Petrochemicals Trading · 07 Steel and Basic Steel Products Trading · 08 Metal Wires Trading · 09 Metal Ropes Trading · 10 Plastic & Nylon Raw Materials Trading · 11 Raw Materials Trading.
 
-The Company's actual business is strictly limited to commission-based intermediary services in chemical fertilizers and non-hazardous chemical raw materials (sulphur). The Company does not engage, and undertakes not to engage, in crude oil trading, refined oil products trading, petrochemicals trading or any other activity listed on the Trade Licence, without prior written notice to its counterparties. In particular, the Company does not participate, directly or indirectly, in any transactions involving crude oil or petroleum products of Russian Federation origin or otherwise subject to the G7/EU price cap or related trade restrictions.
-
-## 05. Compliance Statement
-
-STRATEON TRADING FZCO conducts its business in accordance with applicable UAE federal legislation, including Federal Decree-Law No. (20) of 2018 on AML/CFT and its implementing regulations, and with the applicable rules and regulations of the DMCC Authority. The Company's income derives from its licensed agency activities; all settlements are effected exclusively through regulated banking channels, and complete supporting documentation is retained for every transaction.
-
-Prior to the execution of any agreement, and on an ongoing basis thereafter, each counterparty and its ultimate beneficial owners undergo documentary KYC verification and are screened against the UN Security Council Consolidated List, the UAE Local Terrorist List, the OFAC sanctions lists (including the SDN List), the EU Consolidated Financial Sanctions List and the UK Consolidated List of Financial Sanctions Targets maintained by OFSI (HM Treasury). The Company also screens transactions for applicable sectoral and trade-related restrictions relevant to the commodities concerned. The Company's AML/KYC procedure is available to counterparties upon request.
-
-**Ultimate Beneficial Owner (UBO) declaration.** Mr. Vladislav Kashin (Russian Federation, Passport No. 76 7896482) is the sole ultimate beneficial owner of STRATEON TRADING FZCO, holding 100% of the issued share capital directly and in his personal capacity. No nominee, trust or third-party arrangements exist over the shares. The Company maintains its Register of Beneficial Owners in accordance with UAE Cabinet Decision No. (109) of 2023.
-
-**Sanctions status.** Neither the Company nor its shareholder, director or authorised signatory is designated on, or owned or controlled by any person designated on, the sanctions lists of the UN Security Council, the United States (OFAC SDN and Consolidated Lists), the European Union, the United Kingdom (OFSI) or the UAE Local Terrorist List. The Company undertakes to notify its counterparties immediately of any change in this status.
-
-**PEP status.** Neither the Company's shareholder, director or authorised signatory, nor any of his close family members or known close associates, is a politically exposed person (PEP) within the meaning of applicable UAE AML legislation and the FATF Recommendations. The Company will notify its counterparties without undue delay of any change in this status.
-
-**Compliance & KYC contact:** Vladislav Kashin, Director — info@strateon.pro · +971 50 910 2570. KYC and due diligence enquiries, including requests for certified copies of corporate documents, should be directed to this contact.
-
-## 06. Banking Information
+## 05. Banking Information
 
 The Company maintains its corporate banking arrangements with a UAE-regulated bank. Full banking details (bank name, account currency, IBAN and SWIFT/BIC) are available upon request and are stated in the relevant commission agreement and in the Company's invoices.
 
-## 07. Personal Data Notice
+## 06. Personal Data Notice
 
 The personal data of the individuals named in this document are provided with their consent solely for the recipient's KYC and due diligence purposes, in accordance with UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data. The recipient shall process such data only for these purposes, shall not disclose them to third parties except as required by law, and shall securely delete them once they are no longer required.
 
-## 08. Supporting Documents
+## 07. Supporting Documents
 
 Copies of the Trade Licence (No. DMCC-1023898), the Certificate of Registration (No. DMCC204758, dated 08 May 2026) and the Share Certificate (No. SD-423956, dated 19 May 2026) are provided together with this Information Sheet or upon request. Available upon request to verified counterparties: Memorandum and Articles of Association; Certificate of Incumbency / official DMCC Company Extract (confirming directors, shareholder and authorised signatories); registered office lease agreement (proof of address); certified true copies of the passport (No. 76 7896482) and Emirates ID (No. 784-1973-1533485-0) of Vladislav Kashin — provided through a secure channel for KYC / due diligence purposes only.
 
-## 09. Declaration & Signature
+## 08. Declaration & Signature
 
 I hereby confirm that the information contained in this document is true, complete and accurate to the best of my knowledge and belief. This document is issued solely for compliance and due diligence purposes. I further undertake to notify counterparties without undue delay of any material change to the information contained herein, including any change in the ownership, control, management, licensed activities or sanctions status of the Company or its beneficial owner.
 
@@ -97,4 +79,6 @@ Company Stamp:
 
 ## ⚠️ Перед отправкой (подписанту)
 
-Документ содержит юридические самодекларации, которые подписант должен быть готов подтвердить как достоверные: **санкционный статус**, **PEP-статус**, **UBO без номинальных держателей/трастов**, **наличие банковских отношений с банком ОАЭ** (раздел 06 — если счёт ещё не открыт, раздел перед отправкой удалить или заменить на «account opening in progress»). Подписать, проставить печать (или удалить строку «Company Stamp:», если печать не используется) — и файл готов к отправке.
+1. Подписать и проставить печать (или удалить строку «Company Stamp:», если печать не используется).
+2. Раздел 05 (Banking) утверждает наличие банковских отношений с банком ОАЭ — если счёт ещё не открыт, раздел удалить или заменить на «account opening in progress».
+3. Учесть: после удаления Compliance Statement и дисклеймера в документе не осталось ни оговорки о том, что нефтяные виды деятельности из лицензии не используются, ни санкционной/PEP-самодеклараций — комплаенс контрагентов, скорее всего, запросит это отдельным письмом (готовые формулировки сохранены в [02-client-info-sheet-revised.md](02-client-info-sheet-revised.md)).
