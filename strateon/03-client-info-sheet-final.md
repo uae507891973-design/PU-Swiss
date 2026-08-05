@@ -4,9 +4,9 @@
 
 ---
 
-**Cover:** STRATEON TRADING FZCO · CLIENT INFORMATION SHEET · Confidential — for due diligence purposes only · DMCC Free Zone, Dubai, UAE · Trade Licence No. DMCC-1023898 · +971 50 910 2570 · info@strateon.pro · www.strateon.pro · **Document Ref.: STR-CIS-2026-01 · Version 2.0 · Date of Issue: 04 August 2026** · TRADING. DELIVERING. EMPOWERING.
+**Cover:** оригинальная фирменная обложка из исходного PDF (тёмно-синяя с золотом, логотип, слоган) — без блока Document Ref./Version по решению владельца.
 
-**Футер каждой страницы:** STRATEON TRADING FZCO — CLIENT INFORMATION SHEET | CONFIDENTIAL · FOR DUE DILIGENCE PURPOSES ONLY — PAGE X OF 6
+**Футер контентных страниц (2–6):** STRATEON TRADING FZCO — CLIENT INFORMATION SHEET | CONFIDENTIAL · FOR DUE DILIGENCE PURPOSES ONLY — PAGE X OF 6 (обложка — страница 1, без номера)
 
 ---
 
