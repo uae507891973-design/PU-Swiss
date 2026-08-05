@@ -48,7 +48,19 @@ Note: the occupation stated on the Emirates ID ("Property Owner") reflects the h
 
 ## 04. Business Activities (per Trade Licence No. DMCC-1023898)
 
-Licensed activities: 01 Chemical Fertilizers Trading · 02 Basic Non Ferrous Metal Products Trading · 03 Trading Refined Oil Products Abroad · 04 Tar & Asphalt Trading · 05 Crude Oil Trading Abroad · 06 Petrochemicals Trading · 07 Steel and Basic Steel Products Trading · 08 Metal Wires Trading · 09 Metal Ropes Trading · 10 Plastic & Nylon Raw Materials Trading · 11 Raw Materials Trading.
+Licensed activities (в PDF — в две колонки, каждая позиция на своей строке; позиции 10 «Plastic & Nylon Raw Materials Trading» и 11 «Raw Materials Trading» — две разные позиции лицензии, это не дубль):
+
+1. Chemical Fertilizers Trading
+2. Basic Non Ferrous Metal Products Trading
+3. Trading Refined Oil Products Abroad
+4. Tar & Asphalt Trading
+5. Crude Oil Trading Abroad
+6. Petrochemicals Trading
+7. Steel and Basic Steel Products Trading
+8. Metal Wires Trading
+9. Metal Ropes Trading
+10. Plastic & Nylon Raw Materials Trading
+11. Raw Materials Trading
 
 ## 05. Banking Information
 
