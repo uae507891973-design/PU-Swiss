@@ -1,4 +1,4 @@
-# Strateon Trading DMCC — фирменные активы (логотип-рефреш)
+# Strateon Trading FZCO — фирменные активы (логотип-рефреш)
 
 Векторный комплект логотипа, собранный по итогам аудита брендбука v1.0 — см. [`../15-strateon-brandbook-audit.md`](../15-strateon-brandbook-audit.md). Цвета — строго из фирменной палитры брендбука, без изменений.
 
@@ -23,7 +23,7 @@
 | `strateon-mark-white.svg` | Монохром на тёмных фонах и фото |
 | `strateon-mark-navy.svg` | Монохром на светлых фонах (документы, ч/б печать) |
 | `strateon-logo-horizontal-dark/-light.svg` | Фирменный блок в строку (тёмный/светлый фон). Текст в кривых |
-| `strateon-logo-horizontal-compact-dark/-light.svg` | Компактная строка без подстрочника TRADING DMCC — для ширин меньше ~220 px (шапки, подписи e-mail) |
+| `strateon-logo-horizontal-compact-dark/-light.svg` | Компактная строка без подстрочника TRADING FZCO — для ширин меньше ~220 px (шапки, подписи e-mail) |
 | `strateon-logo-stacked-dark/-light.svg` | Вертикальный фирменный блок (обложки, квадратные площадки) |
 | `strateon-favicon.svg` | Фавиконка (чистый знак) |
 | `strateon-appicon.svg` | Иконка приложения/соцсетей: знак на navy-плашке 512×512, r=96 |

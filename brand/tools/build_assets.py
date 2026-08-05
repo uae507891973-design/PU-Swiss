@@ -80,7 +80,7 @@ def build_marks(out):
     write(f"{out}/logo/strateon-mark-navy.svg", one(NAVY))
 
 def build_lockup_h(out, tp_b, tp_s, dark=True):
-    """Horizontal lockup: mark | divider | STRATEON / -- TRADING DMCC --
+    """Horizontal lockup: mark | divider | STRATEON / -- TRADING FZCO --
     Text block and divider are optically centered on the mark axis (y=100)."""
     word_color = WHITE if dark else NAVY
     gid = f"au-h-{'dark' if dark else 'light'}"
@@ -93,9 +93,9 @@ def build_lockup_h(out, tp_b, tp_s, dark=True):
     base1 = 96.0                              # STRATEON baseline -> block spans 34..166
     base2 = 166.0                             # tagline baseline
     d1, w1 = tp_b.text_path("STRATEON", cap1, x=tx0, y=base1, tracking_em=0.30)
-    d2, w2 = tp_s.text_path("TRADING DMCC", cap2, x=0, y=base2, tracking_em=0.42)
+    d2, w2 = tp_s.text_path("TRADING FZCO", cap2, x=0, y=base2, tracking_em=0.42)
     sub_x = tx0 + (w1 - w2) / 2
-    d2, _ = tp_s.text_path("TRADING DMCC", cap2, x=sub_x, y=base2, tracking_em=0.42)
+    d2, _ = tp_s.text_path("TRADING FZCO", cap2, x=sub_x, y=base2, tracking_em=0.42)
     ry = base2 - cap2 / 2 + 1
     rule_w, rpad = 34.0, 22.0
     rules = (f'<rect x="{sub_x - rpad - rule_w:g}" y="{ry - 1.25:g}" width="{rule_w}" height="2.5" fill="{GOLD}"/>'
@@ -137,9 +137,9 @@ def build_lockup_stacked(out, tp_b, tp_s, dark=True):
     d1, w1 = tp_b.text_path("STRATEON", cap1, x=0, y=base1, tracking_em=0.30)
     d1, _ = tp_b.text_path("STRATEON", cap1, x=cx - w1 / 2, y=base1, tracking_em=0.30)
     cap2, base2 = 21.0, 356.0
-    d2, w2 = tp_s.text_path("TRADING DMCC", cap2, x=0, y=base2, tracking_em=0.42)
+    d2, w2 = tp_s.text_path("TRADING FZCO", cap2, x=0, y=base2, tracking_em=0.42)
     sub_x = cx - w2 / 2
-    d2, _ = tp_s.text_path("TRADING DMCC", cap2, x=sub_x, y=base2, tracking_em=0.42)
+    d2, _ = tp_s.text_path("TRADING FZCO", cap2, x=sub_x, y=base2, tracking_em=0.42)
     ry = base2 - cap2 / 2 + 1
     rule_w, rpad = 30.0, 20.0
     rules = (f'<rect x="{sub_x - rpad - rule_w:g}" y="{ry - 1.1:g}" width="{rule_w}" height="2.2" fill="{GOLD}"/>'
