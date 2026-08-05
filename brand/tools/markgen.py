@@ -4,8 +4,8 @@
 Geometry model (math coords, y down, origin at optical center):
   Elongated pointy-top hexagon: half-width W, half-height R, slant drop D.
   Vertical walls at x = +-W spanning y in [-(R-D), R-D].
-  Spine: two parallel bands at the slant angle (direction u = (W?, D?) -> normalized
-  along slant of TR/BL edges), rotationally symmetric (180 deg) about origin.
+  Spine: two parallel bands at the slant angle (direction u = (W, D)/|(W, D)|,
+  parallel to the TR/BL edges), rotationally symmetric (180 deg) about origin.
   Upper piece  = top chevron + left wall (long) + right wall stub + spine band
                  descending to a tip below-right of center.
   Lower piece  = 180 deg rotation of upper piece.
@@ -30,10 +30,11 @@ def rot180(pts):
 def fmt(pts, nd=2):
     return " ".join(f"{round(x, nd):g},{round(y, nd):g}" for x, y in pts)
 
-def build(R=100.0, WoverR=0.75, DoverR=0.5, t=22.5, c=22.5, g=15.0,
-          tip_x=None):
+def build(R=100.0, WoverR=0.75, DoverR=0.5, t=22.5, c=24.0, g=14.0,
+          tip_x=5.0):
     """Returns dict with polygon point lists for upper piece and lower piece.
-    tip_x: x of the vertical tip cut (default: c*0.25)."""
+    Defaults are the locked production geometry. tip_x: x of the vertical
+    tip cut (None: c*0.25)."""
     W = R * WoverR
     D = R * DoverR
     if tip_x is None:
