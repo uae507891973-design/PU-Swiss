@@ -1,6 +1,6 @@
 # Client Information Sheet — чистовая версия v2.2 (для отправки клиентам)
 
-> Финальный английский текст без внутренних примечаний (PDF: `STRATEON_Client_Information_Sheet_v2.pdf`, **4 страницы** включая обложку (просторная вёрстка, контент распределён равномерно: стр. 2 — Overview и Company Details; стр. 3 — Management, Activities, Banking, Personal Data Notice; стр. 4 — Supporting Documents, Declaration & Signature)). По решению владельца удалены: антикоррупционный абзац, весь раздел Compliance Statement (включая UBO/санкционную/PEP-декларации и комплаенс-контакт) и абзац-обязательство о неведении нефтяных видов деятельности. Разделы с недостающими данными (TRN, VAT, аудитор, банк, география, опыт) не включены — заготовки в [02-client-info-sheet-revised.md](02-client-info-sheet-revised.md). Сканы паспорта и Emirates ID передаются отдельно по запросу (раздел 07). Таблицы — с полными рамками.
+> Финальный английский текст без внутренних примечаний (PDF: `STRATEON_Client_Information_Sheet_v2.pdf`, **4 страницы** включая обложку (просторная вёрстка, контент распределён равномерно: стр. 2 — Overview и Company Details; стр. 3 — Management, Activities, Banking, Personal Data Notice; стр. 4 — Supporting Documents, Declaration & Signature)). По решению владельца удалены: антикоррупционный абзац, весь раздел Compliance Statement (включая UBO/санкционную/PEP-декларации и комплаенс-контакт) и абзац-обязательство о неведении нефтяных видов деятельности. Разделы с недостающими данными (TRN, VAT, аудитор, банк, география, опыт) не включены — заготовки в [02-client-info-sheet-revised.md](02-client-info-sheet-revised.md). Сканы паспорта и Emirates ID передаются отдельно по запросу (раздел 07). Таблицы — с полными рамками. По решению владельца также удалены: упоминание «неопасного химического сырья (серы)» в разделе 01 и примечание про occupation «Property Owner» на Emirates ID.
 
 **Cover:** оригинальная фирменная обложка из исходного PDF — без блока Document Ref./Version.
 
@@ -12,7 +12,7 @@ This Client Information Sheet is provided at the recipient's request solely to s
 
 ## 01. Company Overview
 
-STRATEON TRADING FZCO (the "Company") is a Free Zone Company with limited liability incorporated in the Dubai Multi Commodities Centre free zone, Dubai, United Arab Emirates, and licensed by the Dubai Multi Commodities Centre Authority (the "DMCC Authority") under Trade Licence No. DMCC-1023898. The Company operates as an independent commission-based trading intermediary (introducing agent) in chemical fertilizers (urea, DAP/MAP, NPK, ammonium sulphate) and non-hazardous chemical raw materials, primarily sulphur. The Company does not take title to goods and does not hold inventory; principals contract and settle directly with each other, and the Company receives an agency commission under written commission agreements. The Company conducts its international B2B trading activity from its registered office in the DMCC Free Zone, Dubai, United Arab Emirates.
+STRATEON TRADING FZCO (the "Company") is a Free Zone Company with limited liability incorporated in the Dubai Multi Commodities Centre free zone, Dubai, United Arab Emirates, and licensed by the Dubai Multi Commodities Centre Authority (the "DMCC Authority") under Trade Licence No. DMCC-1023898. The Company operates as an independent commission-based trading intermediary (introducing agent) in chemical fertilizers (urea, DAP/MAP, NPK, ammonium sulphate). The Company does not take title to goods and does not hold inventory; principals contract and settle directly with each other, and the Company receives an agency commission under written commission agreements. The Company conducts its international B2B trading activity from its registered office in the DMCC Free Zone, Dubai, United Arab Emirates.
 
 ## 02. Company Details
 
@@ -44,7 +44,6 @@ The Company's registration and licence status may be independently verified via 
 | Identification | Passport No. 76 7896482, issued on 22 June 2022 by MVD 37001 (Ministry of Internal Affairs of the Russian Federation, issuing authority code 37001), valid until 22 June 2032; date of birth: 25 April 1973; place of birth: Uzbek SSR, USSR (as stated in the passport; present-day Republic of Uzbekistan)<br>Emirates ID No. 784-1973-1533485-0 (Golden Card, valid until 01 November 2033) |
 | UAE Residency | UAE resident since November 2023 — 10-year Golden Visa (investor category); Residence File No. 201/2023/7648662, issued 02 November 2023, Dubai, valid until 01 November 2033 |
 
-Note: the occupation stated on the Emirates ID ("Property Owner") reflects the holder's UAE Golden Visa (investor) category and does not describe his role in the Company.
 
 ## 04. Business Activities (per Trade Licence No. DMCC-1023898)
 
